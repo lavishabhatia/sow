@@ -5,7 +5,11 @@ import Slider from "react-slick";
 function NextArrow(props) {
   const { onClick } = props;
   return (
+<<<<<<< HEAD
     <button className=" hidden  arrow next" onClick={onClick}>
+=======
+    <button className="arrow next" onClick={onClick}>
+>>>>>>> 39155a0 (carousel responsive)
       <svg
         width="11"
         height="17"
@@ -25,7 +29,11 @@ function NextArrow(props) {
 function PrevArrow(props) {
   const { onClick } = props;
   return (
+<<<<<<< HEAD
     <button className="hidden md:block arrow prev" onClick={onClick}>
+=======
+    <button className=" arrow prev" onClick={onClick}>
+>>>>>>> 39155a0 (carousel responsive)
       <svg
         width="11"
         height="17"
@@ -61,13 +69,18 @@ export default function ServiceCarousel({ data }) {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
+<<<<<<< HEAD
           arrows: false,
+=======
+          arrows: true,
+>>>>>>> 39155a0 (carousel responsive)
         },
       },
     ],
   };
 
   return (
+<<<<<<< HEAD
     <div className="overflow-hidden overflow-y-hidden w-full h-full">
       <Slider {...settings}>
         {data?.map((item) => (
@@ -87,6 +100,29 @@ export default function ServiceCarousel({ data }) {
           </div>
         ))}
       </Slider>
+=======
+    <div className="overflow-hidden overflow-y-hidden mb-14 w-full h-full">
+      <div className="carousel-wrapper">
+        <Slider {...settings}>
+          {data?.map((item) => (
+            <div key={item.id} className="px-2 w-[391px] h-[552px]">
+              <div className="relative w-full h-full ">
+                <div className="">
+                  <img
+                    src={item?.image_url}
+                    alt={item.name}
+                    className="object-cover w-[391px] h-[552px]"
+                  />
+                </div>
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-background text-[28px] font-semibold leading-8">
+                  {item.post_title}
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+>>>>>>> 39155a0 (carousel responsive)
     </div>
   );
 }

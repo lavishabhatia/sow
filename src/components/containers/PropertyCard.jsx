@@ -3,7 +3,11 @@ import React from "react";
 const PropertyCard = ({ image, title, description }) => {
   return (
     <article
+<<<<<<< HEAD
       className="max-w-sm bg-white shadow-lg overflow-hidden"
+=======
+      className="max-w-sm bg-white flex flex-col justify-between h-full shadow-lg overflow-hidden"
+>>>>>>> 39155a0 (carousel responsive)
       itemScope
       itemType="https://schema.org/RealEstateAgent"
     >

@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+=======
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
+>>>>>>> 39155a0 (carousel responsive)
 
 @import "tailwindcss";
 
@@ -7,27 +11,45 @@
   --font-open: "Open Sans", sans-serif;
   --font-martel: "Martel Sans", sans-serif;
 
+<<<<<<< HEAD
   --color-background: #FFFFFF;
+=======
+  --color-background: #ffffff;
+>>>>>>> 39155a0 (carousel responsive)
   --color-secondary: #f8f8f8;
   --color-foreground: #887c68;
 }
 
 .carousel-wrapper {
   position: relative;
+<<<<<<< HEAD
   padding: 20px;
+=======
+  padding: 0 20px;
+  overflow: visible;
+>>>>>>> 39155a0 (carousel responsive)
 }
 
 .arrow {
   position: absolute;
   top: 40%;
   z-index: 2;
+<<<<<<< HEAD
   background-color: #F6F6F6;
+=======
+  background-color: #f6f6f6;
+>>>>>>> 39155a0 (carousel responsive)
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
+<<<<<<< HEAD
   width: 50px;
   height: 50px;
+=======
+  width: 50px !important;
+  height: 50px !important;
+>>>>>>> 39155a0 (carousel responsive)
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,3 +60,21 @@
 .arrow.next {
   right: -10px;
 }
+<<<<<<< HEAD
+=======
+
+@media (max-width: 768px) {
+  .arrow {
+    padding: 6px;
+    top: 45%;
+  }
+
+  .arrow.prev {
+    left: 2px;
+  }
+
+  .arrow.next {
+    right: 2px;
+  }
+}
+>>>>>>> 39155a0 (carousel responsive)
