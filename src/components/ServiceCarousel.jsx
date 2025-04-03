@@ -6,10 +6,14 @@ function NextArrow(props) {
   const { onClick } = props;
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
     <button className=" hidden  arrow next" onClick={onClick}>
 =======
     <button className="arrow next" onClick={onClick}>
 >>>>>>> 39155a0 (carousel responsive)
+=======
+    <button className="hidden md:block arrow next" onClick={onClick}>
+>>>>>>> 15c22fb (added the skeleton loading)
       <svg
         width="11"
         height="17"
@@ -30,10 +34,14 @@ function PrevArrow(props) {
   const { onClick } = props;
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
     <button className="hidden md:block arrow prev" onClick={onClick}>
 =======
     <button className=" arrow prev" onClick={onClick}>
 >>>>>>> 39155a0 (carousel responsive)
+=======
+    <button className="hidden md:block arrow prev" onClick={onClick}>
+>>>>>>> 15c22fb (added the skeleton loading)
       <svg
         width="11"
         height="17"
@@ -70,10 +78,14 @@ export default function ServiceCarousel({ data }) {
         settings: {
           slidesToShow: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
           arrows: false,
 =======
           arrows: true,
 >>>>>>> 39155a0 (carousel responsive)
+=======
+          arrows: false,
+>>>>>>> 15c22fb (added the skeleton loading)
         },
       },
     ],
@@ -106,15 +118,13 @@ export default function ServiceCarousel({ data }) {
         <Slider {...settings}>
           {data?.map((item) => (
             <div key={item.id} className="px-2 w-[391px] h-[552px]">
-              <div className="relative w-full h-full ">
-                <div className="">
-                  <img
-                    src={item?.image_url}
-                    alt={item.name}
-                    className="object-cover w-[391px] h-[552px]"
-                  />
-                </div>
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-background text-[28px] font-semibold leading-8">
+              <div className="relative w-full h-full">
+                <img
+                  src={item?.image_url}
+                  alt={item.name}
+                  className="object-cover w-[391px] h-[552px]"
+                />
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-background text-[22px] font-semibold leading-8">
                   {item.post_title}
                 </div>
               </div>
