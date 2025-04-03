@@ -4,11 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-<<<<<<< HEAD
-    "dev": "vite",
-=======
     "dev": "vite --host",
->>>>>>> 39155a0 (carousel responsive)
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
